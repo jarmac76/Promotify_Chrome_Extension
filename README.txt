@@ -1,0 +1,3 @@
+Promotify
+
+Promotify is a chrome extension that to be used in tandem with the open source Taiga project management program. Promotify takes a pre-formatted issue and creates a new user storywith its information. The issue is set up with a list of tasks in its description with links to instructions on how to complete the task. This list is formatted in a specific way. When run, Promotify takes the information in the issue description, parses it, and creates a new user story with the listed tasks now listed as subtasks. The links to the instructions are now links in their corresponding subtasks. 
