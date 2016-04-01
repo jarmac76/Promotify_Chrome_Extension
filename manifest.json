@@ -1,0 +1,32 @@
+{
+  "name": "Promotify",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Creates a user story from an issue using its description to create sub-tasks",
+  "icons": {"20": "promotify_20.png",
+            "128": "promotify_128.png"},
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["http://taiga.peachtreebilling.local/project/*"],
+      "js": ["user_story_template.js"]
+    }
+  ],
+  "page_action": {
+    "default_title": "Promotify",
+    "default_icon": "promotify_20.png",
+    "default_popup": "popup.html" 
+  },
+  "permissions":["tabs",
+                 "http://taiga.peachtreebilling.local/project/*",
+                 "declarativeContent",
+                 "storage"
+                 ]
+
+
+
+}
